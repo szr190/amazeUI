@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>模板</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- am-comment -->
+	<article class="am-comment"> <!-- 评论容器 -->
+	  <a href="">
+	    <img class="am-comment-avatar" alt=""/> <!-- 评论者头像 -->
+	  </a>
+	
+	  <div class="am-comment-main"> <!-- 评论内容容器 -->
+	    <header class="am-comment-hd">
+	      <!--<h3 class="am-comment-title">评论标题</h3>-->
+	      <div class="am-comment-meta"> <!-- 评论元数据 -->
+	        <a href="#link-to-user" class="am-comment-author">评论者</a> <!-- 评论者 -->
+	        评论于 <time datetime=""></time>
+	      </div>
+	    </header>
+	
+	    <div class="am-comment-bd">评论内容</div> <!-- 评论内容 -->
+	  </div>
+	</article>
+
+	<hr>
+
+	<!-- am-list -->
+	<ul class="am-list">
+	  <li><a href="#">列表内容</a></li>
+	</ul>
+
+	<!-- am-nav -->
+	<ul class="am-nav">
+	  <li class="am-active"><a href="#">active列表</a></li>
+	  <li><a href="#">列表</a></li>
+	</ul>
+
+	<!-- am-topbar -->
+	<header class="am-topbar">
+	  <h1 class="am-topbar-brand">
+	      <a href="#">Topbar 导航条</a>
+	  </h1>
+	  <!-- screen < 640 button show -->
+	  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+	
+	  <!-- screen < 640 hide -->
+	  <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+	    <ul class="am-nav am-nav-pills am-topbar-nav">
+	      <li class="am-active"><a href="#">下拉列表 active</a></li>
+	      <li class="am-dropdown" data-am-dropdown>
+	        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+	          下拉 <span class="am-icon-caret-down"></span>
+	        </a>
+	        <ul class="am-dropdown-content">
+	          <li class="am-dropdown-header">li header</li>
+	          <li><a href="#">下拉列表01</a></li>
+	        </ul>
+	      </li>
+	    </ul>
+	
+	    <!-- topbar-right -->
+	    <div class="am-topbar-right">
+	      <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">内容</button>
+	    </div>
+	  </div>
+	</header>
+
+	<!-- am-pagination -->
+	<ul class="am-pagination">
+	  <li class="am-disabled"><a href="#">&laquo;</a></li>
+	  <li class="am-active"><a href="#">1</a></li>
+	  <li><a href="#">2</a></li>
+	  <li><a href="#">3</a></li>
+	  <li><a href="#">&raquo;</a></li>
+	</ul>
+
+	<!-- am-panel -->
+	<section class="am-panel am-panel-default">
+	  <header class="am-panel-hd">
+	    <h3 class="am-panel-title">面板标题</h3>
+	  </header>
+	  <div class="am-panel-bd">
+	    面板内容
+	  </div>
+	  <footer class="am-panel-footer">面板页脚</footer>
+	</section>
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

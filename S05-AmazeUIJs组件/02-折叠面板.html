@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>02-折叠面板</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		结合panel进行
+
+			1.父级是面板组 am-panel-group ,并且还要起一个容器id="accordion"
+			2.面板
+			3.需要在面板内容的外部增加一个父级,用来表示下拉选项的显隐 am-panel-collapse,并起一个伸缩容器的id="doc-collapse1"
+			4.面板内容在一般情况下是要隐藏的,加一个 am-collapse;让其第一个显示就加 am-in
+			5.在标题h标签增加 data-am-collapse="{parent:'父级容器',target:'伸缩容器'}",注意里面要加#
+	-->
+	<div class="am-panel-group" id="accordion">
+		<div class="am-panel am-panel-default">
+			<div class="am-panel-hd">
+				<h3 class="am-panel-title" data-am-collapse="{parent:'#accordion',target:'#doc-collapse1'}">标题1</h3>
+			</div>
+			<div class="am-panel-collapse am-collapse am-in" id="doc-collapse1">
+				<div class="am-panel-bd">
+					1
+				</div>
+			</div>			
+		</div>
+		<div class="am-panel am-panel-default" >
+			<div class="am-panel-hd">
+				<h3 class="am-panel-title"  data-am-collapse="{parent:'#accordion',target:'#doc-collapse2'}">标题2</h3>
+			</div>
+			<div class="am-panel-collapse am-collapse" id="doc-collapse2">
+				<div class="am-panel-bd">
+					2
+				</div>
+			</div>			
+		</div>
+		<div class="am-panel am-panel-default">
+			<div class="am-panel-hd">
+				<h3 class="am-panel-title" data-am-collapse="{parent:'#accordion',target:'#doc-collapse3'}">标题3</h3>
+			</div>
+			<div class="am-panel-collapse am-collapse"  id="doc-collapse3">
+				<div class="am-panel-bd">
+					3
+				</div>
+			</div>			
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

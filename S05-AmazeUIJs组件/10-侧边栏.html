@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>10-侧边栏</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.基本使用
+			
+			触发器 data-am-offcanvas
+			侧滑元素
+				am-offcanvas
+				am-offcanvas-bar
+				am-offcanvas-content
+
+			注意：a的href="#{要放侧滑内容盒子的id}"
+
+	-->
+	
+	<div class="am-container" style="margin-top: 50px;">
+		<a href="#oc-d1" data-am-offcanvas>offcanvas</a>
+		<div class="am-offcanvas" id="oc-d1">
+			<div class="am-offcanvas-bar">
+				<div class="am-offcanvas-content">
+					<p>
+						1<br>
+						2<br>
+						3
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- 
+		2.push效果
+
+			布局与基础效果相同
+
+			不同点：需要给触发器加参数
+				target 指向谁
+				effect 方式
+
+		3.显示方向调整到右侧
+
+			am-offcanvas-bar-flip
+	-->
+	<div class="am-container">
+		<a href="#" class="am-btn am-btn-primary" data-am-offcanvas="{target:'#oc-d2',effect:'push'}">offcanvas:push</a>
+		<div class="am-offcanvas" id="oc-d2">
+			<div class="am-offcanvas-bar">
+				<div class="am-offcanvas-content">
+					<p>
+						1<br>
+						2<br>
+						3
+					</p>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<a href="#" class="am-btn am-btn-primary" data-am-offcanvas="{target:'#oc-d3',effect:'push'}">offcanvas:flip</a>
+		<div class="am-offcanvas" id="oc-d3">
+			<div class="am-offcanvas-bar am-offcanvas-bar-flip">
+				<div class="am-offcanvas-content">
+					<p>
+						1<br>
+						2<br>
+						3
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

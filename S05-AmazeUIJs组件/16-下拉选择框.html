@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>16-下拉选择框</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.单选下拉框
+
+			data-am-selected
+	-->
+	<div class="am-container">
+		<select data-am-selected>
+			<option>A</option>
+			<option>B</option>
+			<option>C</option>
+			<option>D</option>
+		</select>
+	</div>
+
+	<hr>
+
+	<!-- 
+		2.多选下拉框
+
+			加一个h5属性 multiple
+
+			有默认选项的 selected
+	-->
+	<div class="am-container">
+		<select multiple data-am-selected>
+		  <option value="a" selected>Apple</option>
+		  <option value="b">Banana</option>
+		  <option value="o">Orange</option>
+		  <option value="m">Mango</option>
+		</select>
+	</div>
+
+	<hr>
+
+	<!-- 
+		3.分组多选下拉框
+
+			optgroup包裹起来
+	-->
+	<div class="am-container">
+		<select multiple data-am-selected>
+			<optgroup>
+				<option value="A">A</option>
+				<option value="B">B</option>
+				<option value="C">C</option>
+				<option value="D">D</option>
+			</optgroup>
+			<optgroup>
+				<option value="a">a</option>
+				<option value="b">b</option>
+				<option value="c">c</option>
+				<option value="d">d</option>
+			</optgroup>
+		</select>
+	</div>
+
+	<hr>
+
+	<!-- 
+		4.尺寸 颜色 高度 上拉 搜索
+
+			data-am-selected="{}"
+				参数：
+					btnWidth  百分比或数字表示
+					btnSize   xl/lg/sm/xs
+					btnStyle  颜色
+					maxHeight 限制列表的高度
+					dropUp    是否上拉
+					searchBox 是否搜索
+
+	-->
+	<div class="am-container">
+		<select data-am-selected="{btnWidth:'40%',btnSize:'sm',btnStyle:'primary',maxHeight:100,searchBox:1}">
+			<option>A</option>
+			<option>B</option>
+			<option>C</option>
+			<option>D</option>
+		</select>
+	</div>
+
+	
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

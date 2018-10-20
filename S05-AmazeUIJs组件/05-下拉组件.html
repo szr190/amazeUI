@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>05-下拉组件</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.下拉列表
+
+			步骤：
+				(1)首先添加父级div,加am-dropdown
+				(2)完成按钮+列表的静态布局
+				(3)首先解决列表样式问题,添加下拉列表的样式 am-dropdown-content,进行列表的隐藏
+				(4)进行交互处理,给按钮添加一个自定义属性 data-am-dropdown-toggle,并且添加一个类am-dropdown-toggle
+				(5)此时是没有反应的,还需要给父级添加自定义属性来调用 data-am-dropdown
+
+			注意：
+				-可以在列表中使用辅助样式
+					- am-dropdown-header
+					- am-active
+					- am-disabled
+					- am-divider
+
+		2.上拉列表
+
+			am-dropdown-up
+	-->
+	<div class="am-container" style="margin-top: 250px;">
+		<div class="am-dropdown am-dropdown-up" data-am-dropdown>
+			<button class="am-btn am-btn-primary am-dropdown-toggle" data-am-dropdown-toggle>
+				下拉列表 <span class="am-icon-caret-down"></span>
+			</button>
+			<ul class="am-dropdown-content">
+				<li class="am-dropdown-header"><a href="#">首页</a></li>
+				<li class="am-active"><a href="#">新闻中心</a></li>
+				<li class="am-disabled"><a href="#">关于我们</a></li>
+				<li class="am-divider"></li>
+				<li><a href="#">招商加盟</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- 
+		3.宽度自适应
+
+			需要添加一个父级id,在 am-dropdown上进行关联
+	-->
+	<div class="am-container">
+		<div id="con">
+			<div class="am-dropdown" data-am-dropdown="{justify:'#con'}">
+				<button class="am-btn am-btn-danger am-dropdown-toggle" data-am-dropdown-toggle>
+					宽度自适应 <span class="am-icon-caret-down"></span>
+				</button>
+				<div class="am-dropdown-content">
+					<h3>I am I am</h3>
+					<p>111111111111111111111111</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

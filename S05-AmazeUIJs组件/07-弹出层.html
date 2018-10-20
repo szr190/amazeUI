@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>07-弹出层</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.点击显示
+
+			data-am-popover="{content:''}"
+	-->
+	<div class="am-container">
+		<button class="am-btn am-btn-primary" data-am-popover="{content:'这是一个弹出层'}">Popover(点击)</button>
+	</div>
+
+	<hr>
+
+	<!-- 
+		2.hover状态
+
+			trigger:'hover focus'
+	-->
+	<div class="am-container">
+		<button class="am-btn am-btn-danger" data-am-popover="{content:'这是一个弹出层',trigger:'hover focus'}">Popover(点击)</button>
+	</div>
+
+	<hr>
+
+	<!-- 
+		3.颜色和尺寸
+
+			theme:'primary/danger/warning lg/sm'
+	-->
+	<div class="am-container">
+		<button class="am-btn am-btn-danger" data-am-popover="{content:'这是一个弹出层',trigger:'hover focus',theme:'primary lg'}">Popover</button>
+		<hr>
+		<button class="am-btn am-btn-warning" data-am-popover="{content:'这是一个弹出层',trigger:'hover focus',theme:'danger'}">Popover</button>
+		<hr>
+		<button class="am-btn am-btn-success" data-am-popover="{content:'这是一个弹出层',trigger:'hover focus',theme:'warning sm'}">Popover</button>
+	</div>
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

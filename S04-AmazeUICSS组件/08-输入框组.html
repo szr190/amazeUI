@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>08-输入框组</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.基本使用
+
+			am-input-group 在容器上
+			am-input-group-label 在标签文字上添加
+	-->
+	<div class="am-container" style="margin-top: 50px;">
+		<div class="am-input-group">
+			<span class="am-input-group-label"><i class="am-icon-user am-icon-fw"></i></span>
+			<input type="text" class="am-form-field" placeholder="用户名">
+			<span class="am-input-group-label"><i class="am-icon-star am-icon-fw"></i></span>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- 
+		2.输入框结合button
+
+			am-input-group-btn
+
+		3.尺寸
+
+			am-input-group-lg/sm
+
+		4.颜色
+
+			am-input-group-primary
+			am-input-group-secondary
+			am-input-group-success
+			am-input-group-danger
+			am-input-group-warning
+	-->
+	<div class="am-container">
+		<div class="am-input-group am-input-group-primary">
+			<div class="am-input-group-btn">
+				 <button class="am-btn am-btn-default"><i class="am-icon-search"></i></button>
+			</div>
+			<input type="text" class="am-form-field">
+		</div>
+		<hr>
+		<div class="am-input-group am-input-group-lg am-input-group-secondary">
+			<div class="am-input-group-btn">
+				 <button class="am-btn am-btn-primary"><i class="am-icon-search"></i></button>
+			</div>
+			<input type="text" class="am-form-field">
+		</div>
+		<hr>
+		<div class="am-input-group am-input-group-sm am-input-group-warning">
+			<div class="am-input-group-btn">
+				 <button class="am-btn am-btn-success"><i class="am-icon-search"></i></button>
+			</div>
+			<input type="text" class="am-form-field">
+		</div>
+	</div>
+	
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>01-栅格系统</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		栅格系统使用注意：
+			-使用时需要在外围容器上添加am-g类
+
+		响应式断点：
+			首先介绍 am-u
+				其中am是命名空间,在amazeui任何一个类前面都会有;u是unit的缩写,比较切合网格数字的意思
+			am-u-lg-*         表示1025px+的屏幕(大屏)
+			am-u-md-*         表示641px-1024px的屏幕(中等和平板)
+			am-u-sm-*         表示0-640px的屏幕(手机)
+	 -->
+	
+	<!-- 基本的一个网格展现 -->
+	<div class="am-g">
+		<div class="am-u-lg-4"></div>
+		<div class="am-u-lg-8"></div>
+	</div>
+
+	<hr>
+
+	<!-- 不同区间内的不同比例 -->
+	<div class="am-g">
+		<div class="am-u-lg-4 am-u-md-6 am-u-sm-9"></div>
+		<div class="am-u-lg-8 am-u-md-6 am-u-sm-3"></div>
+	</div>
+
+	<hr>
+
+	<!-- 限制行的宽度,要结合am-g使用,单独进行使用是会报错的
+		am-g-fixed  表示将行的最大宽度限制在1000px(可以根据需求来进行修改)
+	-->
+	<div class="am-g am-g-fixed">
+		<div class="am-u-lg-4"></div>
+		<div class="am-u-lg-8"></div>
+	</div>
+
+	<hr>
+
+	<!-- 
+		有一种情况是用到了 am-g-fixed ,而里面的内容是全宽的100%,这样就会有种冗余
+		所以,就会用到 am-container,即:width:100%;max-width:1000px;
+	 -->
+	<div class="am-container">
+		<div class="am-g">
+			<div class="am-u-lg-4"></div>
+			<div class="am-u-lg-8"></div>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- 不足12份的网格 
+		最后一列的网格会进行右浮动
+	-->
+	<div class="am-g">
+		<div class="am-u-lg-3"></div>
+		<div class="am-u-lg-3"></div>
+		<div class="am-u-lg-3"></div>
+	</div>
+	<hr>
+	<!-- 解决方法 添加 am-u-end -->
+	<div class="am-g">
+		<div class="am-u-lg-3"></div>
+		<div class="am-u-lg-3"></div>
+		<div class="am-u-lg-3 am-u-end"></div>
+	</div>
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

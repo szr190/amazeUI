@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>04-图片画廊gallery</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.基本使用
+			(1)使用ul>li进行承载,结合等分网格,加类 am-gallery am-gallery-default,
+			加触发器 data-am-gallery="{pureview:true}",加组件触发器 data-am-widget="gallery"
+			(2)给li里加div.am-gallery-item项
+			(3)a的href放大图路径
+				标题：am-gallery-title
+				时间：am-gallery-desc
+
+		2.带浮层标题的
+			am-gallery-overlay
+
+		3.带容器边框的
+			am-gallery-bordered
+
+		4.带图片边框的
+			am-gallery-imgbordered
+	-->
+	<div class="am-container">
+		<ul class="am-gallery am-gallery-default am-avg-lg-4 am-avg-md-2 am-avg-sm-1" data-am-gallery="{pureview:true}" data-am-widget="gallery">
+			<li>
+				<div class="am-gallery-item">
+					<a href="../img/1.jpg">
+						<img src="../img/1.jpg" alt="">
+						<h3 class="am-gallery-title">图片标题1</h3>
+						<div class="am-gallery-desc">2016-12-01</div>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="am-gallery-item">
+					<a href="../img/2.jpg">
+						<img src="../img/2.jpg" alt="">
+						<h3 class="am-gallery-title">图片标题2</h3>
+						<div class="am-gallery-desc">2016-12-02</div>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="am-gallery-item">
+					<a href="../img/3.jpg">
+						<img src="../img/3.jpg" alt="">
+						<h3 class="am-gallery-title">图片标题3</h3>
+						<div class="am-gallery-desc">2016-12-03</div>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="am-gallery-item">
+					<a href="../img/4.jpg">
+						<img src="../img/4.jpg" alt="">
+						<h3 class="am-gallery-title">图片标题4</h3>
+						<div class="am-gallery-desc">2016-12-04</div>
+					</a>
+				</div>
+			</li>
+		</ul>
+		<hr>
+		<ul class="am-gallery am-gallery-overlay am-avg-lg-4 am-avg-md-2 am-avg-sm-1" data-am-gallery="{pureview:true}" data-am-widget="gallery">
+			<li>
+				<div class="am-gallery-item">
+					<a href="../img/1.jpg">
+						<img src="../img/1.jpg" alt="" alt="图片标题1">
+						<h3 class="am-gallery-title">图片标题1</h3>
+						<div class="am-gallery-desc">2016-12-01</div>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="am-gallery-item">
+					<a href="../img/2.jpg">
+						<img src="../img/2.jpg" alt="">
+						<h3 class="am-gallery-title">图片标题2</h3>
+						<div class="am-gallery-desc">2016-12-02</div>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="am-gallery-item">
+					<a href="../img/3.jpg">
+						<img src="../img/3.jpg" alt="">
+						<h3 class="am-gallery-title">图片标题3</h3>
+						<div class="am-gallery-desc">2016-12-03</div>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="am-gallery-item">
+					<a href="../img/4.jpg">
+						<img src="../img/4.jpg" alt="">
+						<h3 class="am-gallery-title">图片标题4</h3>
+						<div class="am-gallery-desc">2016-12-04</div>
+					</a>
+				</div>
+			</li>
+		</ul>
+		<hr>
+		<ul class="am-gallery am-gallery-bordered am-avg-lg-4 am-avg-md-2 am-avg-sm-1" data-am-gallery="{pureview:true}" data-am-widget="gallery">
+			<li>
+				<div class="am-gallery-item">
+					<a href="../img/1.jpg">
+						<img src="../img/1.jpg" alt="" alt="图片标题1">
+						<h3 class="am-gallery-title">图片标题1</h3>
+						<div class="am-gallery-desc">2016-12-01</div>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="am-gallery-item">
+					<a href="../img/2.jpg">
+						<img src="../img/2.jpg" alt="">
+						<h3 class="am-gallery-title">图片标题2</h3>
+						<div class="am-gallery-desc">2016-12-02</div>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="am-gallery-item">
+					<a href="../img/3.jpg">
+						<img src="../img/3.jpg" alt="">
+						<h3 class="am-gallery-title">图片标题3</h3>
+						<div class="am-gallery-desc">2016-12-03</div>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="am-gallery-item">
+					<a href="../img/4.jpg">
+						<img src="../img/4.jpg" alt="">
+						<h3 class="am-gallery-title">图片标题4</h3>
+						<div class="am-gallery-desc">2016-12-04</div>
+					</a>
+				</div>
+			</li>
+		</ul>
+		<hr>
+		<ul class="am-gallery am-gallery-imgbordered am-avg-lg-4 am-avg-md-2 am-avg-sm-1" data-am-gallery="{pureview:true}" data-am-widget="gallery">
+			<li>
+				<div class="am-gallery-item">
+					<a href="../img/1.jpg">
+						<img src="../img/1.jpg" alt="" alt="图片标题1">
+						<h3 class="am-gallery-title">图片标题1</h3>
+						<div class="am-gallery-desc">2016-12-01</div>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="am-gallery-item">
+					<a href="../img/2.jpg">
+						<img src="../img/2.jpg" alt="">
+						<h3 class="am-gallery-title">图片标题2</h3>
+						<div class="am-gallery-desc">2016-12-02</div>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="am-gallery-item">
+					<a href="../img/3.jpg">
+						<img src="../img/3.jpg" alt="">
+						<h3 class="am-gallery-title">图片标题3</h3>
+						<div class="am-gallery-desc">2016-12-03</div>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="am-gallery-item">
+					<a href="../img/4.jpg">
+						<img src="../img/4.jpg" alt="">
+						<h3 class="am-gallery-title">图片标题4</h3>
+						<div class="am-gallery-desc">2016-12-04</div>
+					</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>05-图标</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.基本使用
+
+			am-icon-{图标名称}
+
+		2.图标大小
+
+			am-icon-lg/md/sm
+
+	-->
+	<div class="am-container" style="margin-top: 50px;">
+		<i class="am-icon-qq am-icon-lg">QQ</i>
+		<hr>
+		<i class="am-icon-weixin am-icon-md">微信</i>
+		<hr>
+		<i class="am-icon-user am-icon-sm">用户</i>
+	</div>
+
+	<hr>
+
+	<!-- 
+		3.颜色 应用button按钮的颜色
+
+			注意：
+				-需要添加am-icon-btn类
+				-标签里面不要加内容
+	-->
+	<div class="am-container">
+		<a href="" class="am-icon-btn am-icon-qq am-danger"></a>
+		<hr>
+		<a href="" class="am-icon-btn am-icon-weixin am-success"></a>
+		<hr>
+		<a href="" class="am-icon-btn am-icon-user am-primary"></a>
+	</div>
+
+	<hr>
+
+	<!-- 
+		4.旋转动画
+
+			am-icon-spin
+			am-icon-pulse
+	-->
+	<div class="am-container">
+		<i class="am-icon-spinner am-icon-spin"></i>
+		<hr>
+		<i class="am-icon-spinner am-icon-pulse"></i>
+	</div>
+
+	<!-- 
+		5.固定宽度-解决宽度不一致的问题
+
+			am-icon-fw
+
+			注意：
+				-文字这时候不能放在标签里,要放在标签的外部
+				-通常使用ul li的布局时使用这个会更好
+	-->
+	<div class="am-container">
+		<i class="am-icon-qq am-icon-fw"></i>QQ
+		<i class="am-icon-weixin am-icon-fw"></i>微信
+		<i class="am-icon-user am-icon-fw"></i>用户
+	</div>
+
+
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

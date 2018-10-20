@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>01-警告框</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.基本使用
+
+			am-alert
+	-->
+	<div class="am-container" style="margin-top: 50px;">
+		<div class="am-alert">
+			这是一个警告框
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- 
+		2.加关闭按钮
+	-->
+	<div class="am-container">
+		<div class="am-alert">
+			<a class="am-close" href="#">&times;</a>
+			<p>这是一个警告框</p>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- 
+		3.增加关闭按钮的交互删除效果
+
+			data-am-alert
+	-->
+	<div class="am-container">
+		<div class="am-alert" data-am-alert>
+			<a class="am-close" href="#">&times;</a>
+			<p>这是一个警告框</p>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- 
+		4.不同状态的警告框
+
+			am-alert-success
+			am-alert-warning
+			am-alert-danger
+			am-alert-secondary
+	-->
+	<div class="am-container">
+		<div class="am-alert" data-am-alert>
+			<a class="am-close" href="#">&times;</a>
+			<p>这是一个警告框</p>
+		</div>
+		<hr>
+		<div class="am-alert am-alert-success" data-am-alert>
+			<a class="am-close" href="#">&times;</a>
+			<p>这是一个警告框</p>
+		</div>
+		<hr>
+		<div class="am-alert am-alert-danger" data-am-alert>
+			<a class="am-close" href="#">&times;</a>
+			<p>这是一个警告框</p>
+		</div>
+		<hr>
+		<div class="am-alert am-alert-warning" data-am-alert>
+			<a class="am-close" href="#">&times;</a>
+			<p>这是一个警告框</p>
+		</div>
+		<hr>
+		<div class="am-alert am-alert-secondary" data-am-alert>
+			<a class="am-close" href="#">&times;</a>
+			<p>这是一个警告框</p>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

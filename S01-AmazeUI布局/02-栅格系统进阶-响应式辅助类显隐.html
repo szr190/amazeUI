@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>02-栅格系统进阶-响应式辅助类显隐</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		am-show/hide-lg/md/sm-up/down/only 调整浏览器窗口查看元素的显隐
+
+			分别进行详细解释：
+				show 显示 hide 隐藏
+				lg/md/sm 不同屏幕大小
+				up 大于
+				down 小于
+				only 只在
+
+				例如:
+					am-show-sm-only  表示 只在sm区间内显示
+					am-show-sm-up    表示 大于sm区间的显示
+					am-show-sm		 表示 在sm区间内显示
+					am-show-down	 表示 小于sm区间的显示
+					am-show          表示 都显示
+
+	 -->
+
+	 <div class="am-g">
+	 	<div class="am-u-lg-7 am-show-md-only"></div>
+	 	<div class="am-u-lg-5 am-show-lg-up"></div>
+	 </div>
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

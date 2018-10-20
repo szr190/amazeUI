@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>07-内容列表list</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		/*.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}*/
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.基本使用
+
+			(1)加类 am-list-news am-list-news-default,加组件触发器data-am-widget="list_news"
+			(2)列表标题 am-list-news-hd | 更多 am-list-news-more 
+			(3)列表内容 am-list-news-bd
+					里面用列表 ul.am-list
+						li用 am-g(100%) am-list-item-dated(带有日期的)
+							a am-list-item-hd
+							span am-list-date
+	-->
+	<div class="am-container" style="margin-top: 50px;">
+		<div class="am-list-news am-list-news-default" data-am-widget="list_news">
+			<div class="am-list-news-hd am-cf">
+				<a href="">
+					<h2>栏目标题</h2>
+					<span class="am-list-news-more am-fr">更多&raquo;</span>
+				</a>
+			</div>
+			<div class="am-list-news-bd">
+				<ul class="am-list">
+					<li class="am-g am-list-item-dated">
+						<a href="" class="am-list-item-hd">1111111111111111</a>
+						<span class="am-list-date">2016-12-01</span>
+					</li>
+					<li class="am-g am-list-item-dated">
+						<a href="" class="am-list-item-hd">1111111111111111</a>
+						<span class="am-list-date">2016-12-01</span>
+					</li>
+					<li class="am-g am-list-item-dated">
+						<a href="" class="am-list-item-hd">1111111111111111</a>
+						<span class="am-list-date">2016-12-01</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- 
+		2.更多在底部的情况
+
+			am-list-news-ft
+	-->
+	<div class="am-container">
+		<div class="am-list-news am-list-news-default" data-am-widget="list_news">
+			<div class="am-list-news-hd am-cf">
+				<a href="">
+					<h2>栏目标题</h2>
+					
+				</a>
+			</div>
+			<div class="am-list-news-bd">
+				<ul class="am-list">
+					<li class="am-g">
+						<a href="" class="am-list-item-hd">1111111111111111</a>
+					</li>
+					<li class="am-g">
+						<a href="" class="am-list-item-hd">1111111111111111</a>
+					</li>
+					<li class="am-g">
+						<a href="" class="am-list-item-hd">1111111111111111</a>
+					</li>
+				</ul>
+			</div>
+			<div class="am-list-news-ft">
+				<span class="am-list-news-more am-fr am-btn am-btn-primary">更多&raquo;</span>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- 
+		带摘要
+
+			am-list-item-desced (应用在li上)
+			am-list-item-hd (应用在a上,做标题)
+			am-list-item-text (应用在摘要文字上)
+	-->
+	<div class="am-container">
+		<div class="am-list-news am-list-news-default" data-am-widget="list_news">
+			<div class="am-list-news-hd am-cf">
+				<a href="">
+					<h2>栏目标题</h2>
+					
+				</a>
+			</div>
+			<div class="am-list-news-bd">
+				<ul class="am-list">
+					<li class="am-g am-list-item-desced">
+						<a href="" class="am-list-item-hd">1111111111111111</a>
+						<div class="am-list-item-text">
+							22222222222222222222222222222
+						</div>
+					</li>
+					<li class="am-g am-list-item-desced">
+						<a href="" class="am-list-item-hd">1111111111111111</a>
+						<div class="am-list-item-text">
+							22222222222222222222222222222
+						</div>
+					</li>
+					<li class="am-g am-list-item-desced">
+						<a href="" class="am-list-item-hd">1111111111111111</a>
+						<div class="am-list-item-text">
+							22222222222222222222222222222
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="am-list-news-ft">
+				<span class="am-list-news-more am-fr am-btn am-btn-primary">更多&raquo;</span>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

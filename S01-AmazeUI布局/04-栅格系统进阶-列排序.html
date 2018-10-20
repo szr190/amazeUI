@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>04-栅格系统进阶-列排序</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		am-u-lg/md/sm-push  表示 向右
+		am-u-lg/md/sm-pull  表示 向左
+	 -->
+	<div class="am-g">
+		<div class="am-u-lg-4"></div>
+		<div class="am-u-lg-8"></div>
+	</div>
+	<hr>
+	<div class="am-g">
+		<div class="am-u-lg-4 am-u-lg-push-8"></div>
+		<div class="am-u-lg-8 am-u-lg-pull-4"></div>
+	</div>
+
+	<hr>
+	<!-- 移除列的内边距 am-g-collapse-->
+	<div class="am-g am-g-collapse">
+		<div class="am-u-lg-4">4</div>
+	</div>
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

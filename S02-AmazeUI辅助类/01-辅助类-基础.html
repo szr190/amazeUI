@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>01-辅助类</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.水平/垂直滚动 am-scrollable-horizontal/vertical
+
+			-一般是结合table使用
+	 -->
+	<!-- 
+		2.浮动相关
+			am-cf  表示 清除浮动
+			am-fl  表示 左浮动
+			am-fr  表示 右浮动
+	 -->
+	 <div class="am-cf">
+		<a href="" class="am-btn am-btn-success am-fl">左浮动</a>
+		<a href="" class="am-btn am-btn-primary am-fr">右浮动</a>
+	 </div>
+
+	 <hr>
+
+	<!-- 
+		3.居中
+			am-center 
+				(display:block;margin:0 auto;)
+	-->
+
+	<!-- 
+		4.垂直对齐
+			am-vertical-align 			添加到父容器,给定指定高度
+			am-vertical-align-middle	需要垂直居中的元素
+			am-vertical-align-bottom    需要底部对齐的元素
+	-->
+	<div class="am-vertical-align" style="height: 150px;border: 2px solid green;">
+		<div class="am-vertical-align-middle">
+			AmazeUI-middle
+		</div>
+	</div>
+	<hr>
+	<div class="am-vertical-align" style="height: 150px;border: 2px solid green;">
+		<div class="am-vertical-align-bottom">
+			AmazeUI-bottom
+		</div>
+	</div>
+	
+	<hr>
+
+	<!-- 
+		5.元素的显示/隐藏属性
+
+			(1)显示：
+					am-block				(display:block)
+					am-inline				(display:inline)
+					am-inline-block			(display:inline-block)
+
+			(2)隐藏：
+					am-hide
+
+	 -->
+	  
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

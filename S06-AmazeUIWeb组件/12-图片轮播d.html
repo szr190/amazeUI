@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>12-图片轮播d</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.d1 - 标题加底部左右圆形箭头
+			在desc里加h2.am-slider-title+a.am-slider-more
+
+		2.d2 - 浮层标题加底部圆形控制点
+			在desc里加div.am-slider-content
+
+		3.d3 - 标题加缩略图
+	-->
+	<div class="am-container">
+		<div class="am-slider am-slider-d1" data-am-slider data-am-widget="slider">
+			<ul class="am-slides">
+				<li>
+					<a href="#"><img src="../img/1.jpg" alt=""></a>
+					<div class="am-slider-desc">
+						<h2 class="am-slider-title">111111111111111</h2>
+						<a href="" class="am-slider-more">了解更多</a>
+					</div>
+				</li>
+				<li>
+					<a href="#"><img src="../img/2.jpg" alt=""></a>
+					<div class="am-slider-desc">
+						<h2 class="am-slider-title">222222222222222222</h2>
+						<a href="" class="am-slider-more">了解更多</a>
+					</div>
+				</li>
+				<li>
+					<a href="#"><img src="../img/3.jpg" alt=""></a>
+					<div class="am-slider-desc">
+						<h2 class="am-slider-title">333333333333333333333</h2>
+						<a href="" class="am-slider-more">了解更多</a>
+					</div>
+				</li>
+				<li>
+					<a href="#"><img src="../img/4.jpg" alt=""></a>
+					<div class="am-slider-desc">
+						<h2 class="am-slider-title">44444444444444444444444</h2>
+						<a href="" class="am-slider-more">了解更多</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="am-container">
+		<div class="am-slider am-slider-d2" data-am-slider data-am-widget="slider">
+			<ul class="am-slides">
+				<li>
+					<a href="#"><img src="../img/1.jpg" alt=""></a>
+					<div class="am-slider-desc">
+						<div class="am-slider-content">
+							<h2 class="am-slider-title">111111111111111</h2>
+							<a href="" class="am-slider-more">了解更多</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="#"><img src="../img/2.jpg" alt=""></a>
+					<div class="am-slider-desc">
+						<div class="am-slider-content">
+							<h2 class="am-slider-title">222222222222222222</h2>
+							<a href="" class="am-slider-more">了解更多</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="#"><img src="../img/3.jpg" alt=""></a>
+					<div class="am-slider-desc">
+						<div class="am-slider-content">
+							<h2 class="am-slider-title">333333333333333333333</h2>
+							<a href="" class="am-slider-more">了解更多</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="#"><img src="../img/4.jpg" alt=""></a>
+					<div class="am-slider-desc">
+						<div class="am-slider-content">
+							<h2 class="am-slider-title">44444444444444444444444</h2>
+							<a href="" class="am-slider-more">了解更多</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="am-container">
+		<div class="am-slider am-slider-d3" data-am-slider='{&quot;controlNav&quot;:&quot;thumbnails&quot;,&quot;directionNav&quot;:false}' data-am-widget="slider">
+			<ul class="am-slides">
+				<li data-thumb="../img/1.jpg">
+					<a href="#"><img src="../img/1.jpg" alt=""></a>
+					<div class="am-slider-desc">
+						<h2 class="am-slider-title">111111111111111</h2>
+						<a href="" class="am-slider-more">了解更多</a>
+					</div>
+				</li>
+				<li data-thumb="../img/2.jpg">
+					<a href="#"><img src="../img/2.jpg" alt=""></a>
+					<div class="am-slider-desc">
+						<h2 class="am-slider-title">222222222222222222</h2>
+						<a href="" class="am-slider-more">了解更多</a>
+					</div>
+				</li>
+				<li data-thumb="../img/3.jpg">
+					<a href="#"><img src="../img/3.jpg" alt=""></a>
+					<div class="am-slider-desc">
+						<h2 class="am-slider-title">333333333333333333333</h2>
+						<a href="" class="am-slider-more">了解更多</a>
+					</div>
+				</li>
+				<li data-thumb="../img/4.jpg">
+					<a href="#"><img src="../img/4.jpg" alt=""></a>
+					<div class="am-slider-desc">
+						<h2 class="am-slider-title">44444444444444444444444</h2>
+						<a href="" class="am-slider-more">了解更多</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

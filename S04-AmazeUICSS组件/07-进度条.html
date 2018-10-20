@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>07-进度条</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.基本使用
+
+			am-progress 进度条容器
+			am-progress-bar 显示进度条信息
+
+			注意：
+				-要添加行内样式 的宽度值
+	-->
+	<div class="am-container" style="margin-top: 50px;">
+		<div class="am-progress">
+			<div class="am-progress-bar" style="width: 30%">30%</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- 
+		2.颜色
+
+			am-progress-bar-secondary
+			am-progress-bar-success
+			am-progress-bar-danger
+			am-progress-bar-warning
+
+		3.进度条高度
+
+			am-progress-sm
+			am-progress-xs
+
+		4.进度条条纹
+
+			am-progress-striped
+
+			注意：
+				-加上am-active就可以实现动态的条纹效果
+	-->
+	<div class="am-container">
+		<div class="am-progress am-progress-sm">
+			<div class="am-progress-bar am-progress-bar-secondary" style="width: 30%"></div>
+		</div>
+		<hr>
+		<div class="am-progress am-progress-xs">
+			<div class="am-progress-bar am-progress-bar-success" style="width: 40%"></div>
+		</div>
+		<hr>
+		<div class="am-progress am-progress-striped am-active">
+			<div class="am-progress-bar am-progress-bar-danger" style="width: 50%">50%</div>
+		</div>
+		<hr>
+		<div class="am-progress">
+			<div class="am-progress-bar am-progress-bar-warning" style="width: 60%">60%</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- 
+		5.进度条堆叠
+
+			只要加起来100%就可以,都放在am-progress类中
+	-->
+	<div class="am-container">
+		<div class="am-progress">
+			<div class="am-progress-bar am-progress-bar-warning" style="width: 60%">60%</div>
+			<div class="am-progress-bar am-progress-bar-success" style="width: 20%">20%</div>
+			<div class="am-progress-bar am-progress-bar" style="width: 20%">20%</div>
+		</div>
+	</div>
+	
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

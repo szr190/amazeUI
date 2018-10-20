@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>14-评论组件</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.基本结构
+			am-comment 评论容器
+			am-comment-avatar 评论者头像
+			am-comment-main 评论内容容器
+			am-comment-hd 评论标头部分
+			am-comment-title 标题   -不常用
+			am-comment-meta 评论元数据
+			am-comment-author 评论者
+			am-comment-bd 评论内容
+			am-comment-footer 评论底部
+			am-comment-actions 评论动作(点赞... ...)
+
+		2.评论列表
+			am-comment-list 就是由多个评论容器组合而成的
+
+		3.评论内容左右对齐
+			am-comment-list-flip
+
+		4.在右面显示头像
+			am-comment-flip
+
+		5.评论状态
+			am-comment-primary
+			am-comment-highlight
+			am-comment-success
+			am-comment-danger
+			am-comment-warning
+	 -->
+	 <div class="am-container" style="margin-top: 50px;">
+	 	<article class="am-comment am-comment-highlight">
+	 		<a href="">
+	 			<img src="../img/1.jpg" alt="" class="am-comment-avatar">
+	 		</a>
+
+	 		<div class="am-comment-main">
+	 			<header class="am-comment-hd">
+	 				<!-- <h3 class="am-comment-title">标题</h3> -->
+	 				<div class="am-comment-meta">
+	 					<a href="" class="am-comment-author">某人</a>
+	 					评论于<time datetime="2016-11-28">2016-11-28</time>
+	 				</div>
+	 			</header>
+	 			<div class="am-comment-bd">
+	 				这里是评论内容
+	 			</div>
+	 			<div class="am-comment-footer">
+	 				<div class="am-comment-actions">
+	 					<a href="#"><i class="am-icon-thumbs-up"></i></a>
+	 					<a href="#"><i class="am-icon-thumbs-down"></i></a>
+	 					<a href="#"><i class="am-icon-reply"></i></a>
+	 				</div>
+	 			</div>
+	 		</div>
+	 	</article>
+	 	<hr>
+	 	<article class="am-comment am-comment-flip am-comment-danger">
+	 		<a href="">
+	 			<img src="../img/1.jpg" alt="" class="am-comment-avatar">
+	 		</a>
+
+	 		<div class="am-comment-main">
+	 			<header class="am-comment-hd">
+	 				<!-- <h3 class="am-comment-title">标题</h3> -->
+	 				<div class="am-comment-meta">
+	 					<a href="" class="am-comment-author">某人</a>
+	 					评论于<time datetime="2016-11-28">2016-11-28</time>
+	 				</div>
+	 			</header>
+	 			<div class="am-comment-bd">
+	 				这里是评论内容
+	 			</div>
+	 			<div class="am-comment-footer">
+	 				<div class="am-comment-actions">
+	 					<a href="#"><i class="am-icon-thumbs-up"></i></a>
+	 					<a href="#"><i class="am-icon-thumbs-down"></i></a>
+	 					<a href="#"><i class="am-icon-reply"></i></a>
+	 				</div>
+	 			</div>
+	 		</div>
+	 	</article>
+
+	 </div>
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+			
+	</script>
+</body>
+</html>

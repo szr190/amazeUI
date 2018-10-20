@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>08-图片轮播-default</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+		.am-slider-default .am-control-nav{
+			bottom: 15px;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.默认
+
+			(1)给父级加类am-slider am-slider-default,加触发器data-am-slider,加组件触发器data-am-widget="slider"
+			(2)给ul加类am-slides
+	-->
+	<div class="am-container">
+		<div class="am-slider am-slider-default" data-am-slider data-am-widget="slider">
+			<ul class="am-slides">
+				<li><a href="#"><img src="../img/1.jpg" alt=""></a></li>
+				<li><a href="#"><img src="../img/2.jpg" alt=""></a></li>
+				<li><a href="#"><img src="../img/3.jpg" alt=""></a></li>
+				<li><a href="#"><img src="../img/4.jpg" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- 
+		2.标题
+
+			(1)基本形式如默认,需要给组件触发器加相应参数
+			(2)标题部分加类 am-slider-desc		
+	-->
+	<div class="am-container">
+		<div class="am-slider am-slider-default" data-am-slider="{controlNav:false}" data-am-widget="slider">
+			<ul class="am-slides">
+				<li>
+					<a href="#"><img src="../img/1.jpg" alt=""></a>
+					<div class="am-slider-desc">111111111111</div>
+				</li>
+				<li>
+					<a href="#"><img src="../img/2.jpg" alt=""></a>
+					<div class="am-slider-desc">222222222222</div>
+				</li>
+				<li>
+					<a href="#"><img src="../img/3.jpg" alt=""></a>
+					<div class="am-slider-desc">333333333333</div>
+				</li>
+				<li>
+					<a href="#"><img src="../img/4.jpg" alt=""></a>
+					<div class="am-slider-desc">444444444444</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- 
+		3.缩略图
+
+			(1)基本格式如默认,需要给触发器加参数 controlNav:thumbnails
+			(2)给li添加data-thumb属性来承载缩略图
+
+			注意：在触发器中,最好加上&quot;标签,原因不是很清楚
+	-->
+	<div class="am-container">
+		<div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{&quot;animation&quot;:&quot;slide&quot;,&quot;controlNav&quot;:&quot;thumbnails&quot;}' >
+			<ul class="am-slides">
+				<li data-thumb="../img/1.jpg"><img src="../img/1.jpg" alt=""></li>
+				<li data-thumb="../img/2.jpg"><img src="../img/2.jpg" alt=""></li>
+				<li data-thumb="../img/3.jpg"><img src="../img/3.jpg" alt=""></li>
+				<li data-thumb="../img/4.jpg"><img src="../img/4.jpg" alt=""></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

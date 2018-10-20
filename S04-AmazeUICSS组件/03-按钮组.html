@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>03-按钮组</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.基本使用
+			am-btn-group	
+	-->
+	<div class="am-container" style="margin-top: 50px;">
+		<div class="am-btn-group">
+			<button class="am-btn am-btn-default">左</button>
+			<button class="am-btn am-btn-primary">中</button>
+			<button class="am-btn am-btn-success">右</button>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- 
+		2.按钮工具栏
+
+			am-btn-toolbar
+
+			注意：是在am-btn-group的父级上添加
+
+		3.按钮组大小
+
+			am-btn-group-lg/default/sm/xs
+
+		4.垂直排列
+
+			am-btn-group-stacked
+
+		5.自适应宽度
+
+			am-btn-group-justify
+	-->
+	<div class="am-container">
+		<div class="am-btn-toolbar">
+			<div class="am-btn-group am-btn-group-lg am-btn-group-stacked ">
+				<button class="am-btn am-btn-default">AmazeUI</button>
+				<button class="am-btn am-btn-primary">中</button>
+				<button class="am-btn am-btn-success">右</button>
+			</div>
+			<div class="am-btn-group am-btn-group-sm ">
+				<button class="am-btn am-btn-default">AmazeUI</button>
+			</div>
+			<div class="am-btn-group am-btn-group-xs">
+				<button class="am-btn am-btn-default">AmazeUI</button>
+			</div>
+		</div>
+	</div>
+	
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

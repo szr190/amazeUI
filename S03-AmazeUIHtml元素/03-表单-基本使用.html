@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>03-表单-基本使用</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.需要在form上添加am-form,容器里的子元素才会应用框架的样式
+		2.要使表单之间有一定的间距,需要添加am-form-group
+	-->
+	<div class="am-container">
+		<form action="" class="am-form">
+			<div class="am-form-group">
+				<label for="">用户名</label>
+				<input type="text" placeholder="请输入用户名">
+			</div>
+			<div class="am-form-group">
+				<label for="">密码</label>
+				<input type="text" placeholder="请输入密码">
+			</div>
+		</form>
+	</div>
+
+	<hr>
+
+	<!-- 
+		3.表单形状
+			am-radius
+			am-round
+
+		注意：在脱离am-form使用input,需要加上am-form-field
+	-->
+	<div class="am-container">
+		<input type="text" placeholder="圆角input" class="am-form-field am-radius">
+		<hr>
+		<input type="text" placeholder="椭圆input" class="am-form-field am-round">
+	</div>
+	
+	
+
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

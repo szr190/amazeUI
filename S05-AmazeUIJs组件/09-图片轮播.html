@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>09-图片轮播</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	<!-- 
+		1.基础使用
+			
+			(1)给父级div添加 am-slider am-slider-default类,同时定义一个id="demo-slider-0"
+			(2)给ul添加 am-sliders类
+			(3)给父级div添加一个自定义属性 data-am-flexslider
+				参数(常用)：
+					-controlNav 是否创建控制点
+					-directionNav 是否创建方向按钮
+					-keyboard 是否开启左右键盘控制
+					-touch 是否允许移动端触摸事件
+					-slideshow 是否自动播放
+					-animationLoop 是否循环播放
+					-animation 动画效果(slide/fade)
+
+			注意：
+				-ul的类是 am-slides 不是am-sliders			
+	-->
+	<div class="am-container">
+		<div class="am-slider am-slider-default" id="demo-slider-0" data-am-flexslider='{controlNav:false}'>
+			<ul class="am-slides">
+				<li><a href="#"><img src="../img/1.jpg" alt=""></a></li>
+				<li><a href="#"><img src="../img/2.jpg" alt=""></a></li>
+				<li><a href="#"><img src="../img/3.jpg" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- 
+		2.缩略图模式
+			
+			基本结构与基础使用的一致
+
+				(1)给父级的自定义属性 添加 controlNav: 'thumbnails',directionNav: false, slideshow: false
+				(2)给ul的li添加自定义属性 data-thumb="路径"
+	-->
+	<div class="am-container">
+		<div class="am-slider am-slider-default" data-am-flexslider="{controlNav: 'thumbnails',directionNav: false, slideshow: false}">
+			<ul class="am-slides">
+				<li data-thumb="../img/1.jpg"><a href="#"><img src="../img/1.jpg" alt=""></a></li>
+				<li data-thumb="../img/2.jpg"><a href="#"><img src="../img/2.jpg" alt=""></a></li>
+				<li data-thumb="../img/3.jpg"><a href="#"><img src="../img/3.jpg" alt=""></a></li>
+				<li data-thumb="../img/4.jpg"><a href="#"><img src="../img/4.jpg" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- 
+		3.多图滚动
+			
+			基本结构与基础使用的一致
+				
+				(1)给父级添加自定义属性 data-am-flexslider="{}",里面的参数
+						itemWith 实现多图滚动
+						itemMargin 仅用作计算滚动宽度用
+					,还需要给父级添加一个类 am-slider-carousel 
+				
+
+	-->
+	<div class="am-container">
+		<div class="am-slider am-slider-default am-slider-carousel" data-am-flexslider="{itemWidth:200,itemMargin:3,slideshow:false}">
+			<ul class="am-slides">
+				<li><a href="#"><img src="../img/1.jpg" alt=""></a></li>
+				<li><a href="#"><img src="../img/2.jpg" alt=""></a></li>
+				<li><a href="#"><img src="../img/3.jpg" alt=""></a></li>
+				<li><a href="#"><img src="../img/4.jpg" alt=""></a></li>
+				<li><a href="#"><img src="../img/5.jpg" alt=""></a></li>
+				<li><a href="#"><img src="../img/6.jpg" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

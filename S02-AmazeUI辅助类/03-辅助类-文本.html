@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>03-辅助类-文本</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.文字颜色
+			am-text-primary
+			am-text-secondary
+			am-text-success
+			am-text-warning
+			am-text-danger
+	-->
+	<div class="am-container">
+		<p class="am-text-primary">AmazeUI</p>
+		<p class="am-text-secondary">AmazeUI</p>
+		<p class="am-text-success">AmazeUI</p>
+		<p class="am-text-warning">AmazeUI</p>
+		<p class="am-text-danger">AmazeUI</p>
+	</div>
+
+	<hr>
+
+	<!-- 
+		2.文字大小
+			am-text-xxxl    42px
+			am-text-xxl     32px
+			am-text-xl      24px
+			am-text-lg      18px
+			am-text-default 16px
+			am-text-sm      14px
+			am-text-xs      12px
+		
+	-->
+	<div class="am-container">
+		<p class="am-text-xxxl">AmazeUI</p>
+		<p class="am-text-xxl">AmazeUI</p>
+		<p class="am-text-xl">AmazeUI</p>
+		<p class="am-text-lg">AmazeUI</p>
+		<p class="am-text-default">AmazeUI</p>
+		<p class="am-text-sm">AmazeUI</p>
+		<p class="am-text-xs">AmazeUI</p>
+	</div>
+
+	<hr>
+
+	<!-- 
+		3.文本对齐方式
+
+			(1)左右
+				am-lg/md/sm/xs-only-text-left/right/center/justify
+			(2)垂直
+				am-text-top/middle/bottom
+	-->
+	<div class="am-container">
+		<div style="width: 150px;height: 100px;border: 2px solid green;" class="am-text-left">AmazeUI</div>
+	</div>
+	<div class="am-container">
+		<div style="width: 150px;height: 100px;border: 2px solid green;" class="am-text-center">AmazeUI</div>
+	</div>
+	<div class="am-container">
+		<div style="width: 150px;height: 100px;border: 2px solid green;" class="am-text-right">AmazeUI</div>
+	</div>
+
+	<!-- 
+		4.单/多行 文字截断
+
+			(1)单
+				am-text-truncate
+
+			(2)多
+				line-clamp
+
+	-->
+	<div class="am-container am-g-collapse">
+		<div class="am-g">
+			<div class="am-u-lg-4">
+				<p class="am-text-truncate">AmazeUIAmazeUIAmazeUIAmazeUIAmazeUIAmazeUIAmazeUIAmazeUIAmazeUIAmazeUI</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- 
+		5.屏幕方向
+
+			横屏：.am-show-landscape, .am-hide-landscape
+			竖屏：.am-show-portrait, .am-hide-portrait
+	 -->
+	
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>01-折叠面板accordion</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+
+		1.有边框(默认default)
+
+			(1)父级一个section,添加类 am-accordion am-accordion-default,添加触发器data-am-accordion,因为是web组件,需要添加组件触发器 data-am-widget="accordion"
+			(2)内容部分用dl>dt+dd方式进行展示
+					dl - 添加选项am-accordion-item
+					dt - 添加标题am-accordion-title
+					dd - 添加内容am-accordion-bd
+						注意：
+							-在内容中还需要加一个容器 am-accordion-content,是为了规避因padding计算有误的情况
+			(3)需要给bd处加一个 am-collapse来进行隐藏 让显示的部分加 am-in
+
+		2.无边框
+			am-accordion-basic
+		3.扁平分离边框
+			am-accordion-gapped
+	-->
+	<div class="am-container">
+		<section class="am-accordion am-accordion-default" data-am-accordion data-am-widget="accordion">
+			<dl class="am-accordion-item am-active">
+				<dt class="am-accordion-title">标题1</dt>
+				<dd class="am-accordion-bd am-collapse am-in">
+					<div class="am-accordion-content">
+						内容1
+					</div>
+				</dd>
+			</dl>
+			<dl class="am-accordion-item">
+				<dt class="am-accordion-title">标题2</dt>
+				<dd class="am-accordion-bd am-collapse">
+					<div class="am-accordion-content">
+						内容2
+					</div>
+				</dd>
+			</dl>
+			<dl class="am-accordion-item">
+				<dt class="am-accordion-title">标题3</dt>
+				<dd class="am-accordion-bd am-collapse">
+					<div class="am-accordion-content">
+						内容3
+					</div>
+				</dd>
+			</dl>
+		</section>
+		<hr>
+		<section class="am-accordion am-accordion-basic" data-am-accordion data-am-widget="accordion">
+			<dl class="am-accordion-item am-active">
+				<dt class="am-accordion-title">标题1</dt>
+				<dd class="am-accordion-bd am-collapse am-in">
+					<div class="am-accordion-content">
+						内容1
+					</div>
+				</dd>
+			</dl>
+			<dl class="am-accordion-item">
+				<dt class="am-accordion-title">标题2</dt>
+				<dd class="am-accordion-bd am-collapse">
+					<div class="am-accordion-content">
+						内容2
+					</div>
+				</dd>
+			</dl>
+			<dl class="am-accordion-item">
+				<dt class="am-accordion-title">标题3</dt>
+				<dd class="am-accordion-bd am-collapse">
+					<div class="am-accordion-content">
+						内容3
+					</div>
+				</dd>
+			</dl>
+		</section>
+		<hr>
+		<section class="am-accordion am-accordion-gapped" data-am-accordion data-am-widget="accordion">
+			<dl class="am-accordion-item am-active">
+				<dt class="am-accordion-title">标题1</dt>
+				<dd class="am-accordion-bd am-collapse am-in">
+					<div class="am-accordion-content">
+						内容1
+					</div>
+				</dd>
+			</dl>
+			<dl class="am-accordion-item">
+				<dt class="am-accordion-title">标题2</dt>
+				<dd class="am-accordion-bd am-collapse">
+					<div class="am-accordion-content">
+						内容2
+					</div>
+				</dd>
+			</dl>
+			<dl class="am-accordion-item">
+				<dt class="am-accordion-title">标题3</dt>
+				<dd class="am-accordion-bd am-collapse">
+					<div class="am-accordion-content">
+						内容3
+					</div>
+				</dd>
+			</dl>
+		</section>
+	</div>
+	
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

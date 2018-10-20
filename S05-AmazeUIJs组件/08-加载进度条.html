@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>08-加载进度条</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.基础使用
+			start()
+			done()
+	-->
+	<div class="am-container" style="margin-top: 50px;">
+		<button id="np-s" class="am-btn am-btn-primary">start()</button>
+		<button id="np-d" class="am-btn am-btn-danger">done()</button>
+	</div>
+
+	<hr>
+
+	<!-- 
+		2.高级使用
+
+			(1)设置百分比
+				set(n) n的取值范围在0~1之间
+			(2)增加进度
+				inc() 随机增加
+			(3)强制结束
+				done(true)
+			(4)获取进度值
+				status
+	-->
+	<div class="am-container">
+		<button id="np-set" class="am-btn am-btn-primary">set</button>
+		<button id="np-inc" class="am-btn am-btn-danger">inc</button>
+		<button id="np-done" class="am-btn am-btn-success">done(true)</button>
+		<button id="np-status" class="am-btn am-btn-warning">status</button>
+	</div>
+	
+	
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+		//1.基础使用 
+			//获取加载进度条
+			var progress=$.AMUI.progress;
+			//点击 加载开始
+			$("#np-s").on('click',function(){
+				progress.start();
+			});
+			//点击 加载完成
+			$("#np-d").on('click',function(){
+				progress.done();
+			});
+		//2.高级使用
+			$("#np-set").on('click',function(){
+				progress.set(0.4);
+			});
+			$("#np-inc").on('click',function(){
+				progress.inc();
+			});
+			$("#np-done").on('click',function(){
+				progress.done(true);
+			});
+			$("#np-status").on('click',function(){
+				$(this).text('Status='+progress.status);
+			});
+	})
+	</script>
+</body>
+</html>

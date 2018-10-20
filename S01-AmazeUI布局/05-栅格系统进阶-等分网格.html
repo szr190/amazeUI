@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>05-栅格系统进阶-等分网格</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		等分网格需要注意的地方
+			-必须应用在ul/ol列表上
+			-响应式区间断点与基础网格相同,只是表现形式不同
+				am-avg-lg-*
+				am-avg-md-*
+				am-avg-sm-*
+			-*表示的数字是几等分的意思,不是12列中的几列
+			-可以结合am-thumbnails缩略图使用
+	 -->
+		<ul class="am-avg-lg-4 am-avg-md-3 am-avg-1">
+			<li><img src="../img/1.jpg" alt="" width="200" height="150" class="am-thumbnail"></li>
+			<li><img src="../img/1.jpg" alt="" width="200" height="150" class="am-thumbnail"></li>
+			<li><img src="../img/1.jpg" alt="" width="200" height="150" class="am-thumbnail"></li>
+			<li><img src="../img/1.jpg" alt="" width="200" height="150" class="am-thumbnail"></li>
+		</ul>	
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

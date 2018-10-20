@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>03-折叠菜单</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.首先列出 由button和nav组成的静态布局
+		2.进行交互处理
+			(1)隐藏nav am-collapse,并自定义一个id名称
+			(2)给按钮添加自定义属性 data-am-collapse="{target='#collapse-nav'}"
+	-->
+	<div class="am-container" style="margin-top: 50px;">
+		<button class="am-btn am-btn-primary" data-am-collapse="{target:'#collapse-nav'}">Menu <span class="am-icon-bars"></span></button>
+		<ul class="am-nav am-collapse" id="collapse-nav">
+			<li class="am-active"><a href="#">首页</a></li>
+			<li><a href="#">新闻中心</a></li>
+			<li><a href="#">关于我们</a></li>
+		</ul>
+	</div>
+	
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

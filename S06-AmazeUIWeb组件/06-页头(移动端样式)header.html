@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>06-页头(移动端样式)header</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.基本使用
+
+			(1)用header标签承载,加类 am-header am-header-default,加组件触发器data-am-widget="header"
+			(2)内容
+				左：am-header-nav am-header-left 
+					文字：am-header-nav-title
+					图标：am-header-icon
+				中：am-header-title 标题
+				右：am-header-nav am-header-left 
+					图标：am-header-icon
+	-->
+	<div class="am-container" style="margin-top: 50px;">
+		<header class="am-header am-header-default" data-am-widget="header">
+			<div class="am-header-nav am-header-left">
+				<a href="">
+					<span class="am-header-nav-title">首页</span>
+					<i class="am-header-icon am-icon-home"></i>
+				</a>
+			</div>
+			<h1 class="am-header-title">
+				<a href="">AmazeUI</a>
+			</h1>
+			<div class="am-header-nav am-header-right">
+				<a href="">
+					<i class="am-header-icon am-icon-bars"></i>
+					<span class="am-header-nav-title">菜单</span>
+				</a>
+			</div>
+		</header>
+	</div>
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

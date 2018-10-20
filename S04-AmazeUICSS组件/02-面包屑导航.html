@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>02-面包屑导航</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.默认形式
+			am-breadcrumb
+
+			注意：
+				-想要最后一个的字体不和前两个相同,则需要在相应的li上加am-active,并且去掉a链接
+	-->
+	<div class="am-container">
+		<ul class="am-breadcrumb">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">新闻中心</a></li>
+			<li class="am-active">新闻详情</li>
+		</ul>
+	</div>
+
+	<hr>
+
+	<!-- 
+		2.斜杠形式
+			am-breadcrumb-slash
+		3.结合图标Icon
+			在相应的a链接上加
+	-->
+	<div class="am-container">
+		<ul class="am-breadcrumb am-breadcrumb-slash">
+			<li><a href="#" class="am-icon-home">首页</a></li>
+			<li><a href="#">新闻中心</a></li>
+			<li class="am-active">新闻详情</li>
+		</ul>
+	</div>
+	
+	
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

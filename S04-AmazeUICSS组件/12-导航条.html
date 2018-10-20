@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>12-导航条</title>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<style type="text/css">
+		.am-g div{
+			height: 100px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 
+		1.给header添加am-topbar
+		2.logo部分 添加 am-topbar-brand
+		3.添加响应式按钮 am-topbar-btn am-topbar-toggle,并将其隐藏 am-show-sm-only
+		4.添加导航部分,需要给nav添加父级 am-collapse am-topbar-collapse ,并自定义一个id名
+		5.在导航nav里需要加上一个类 am-topbar-nav
+		6.把响应式按钮和nav进行关联,通过data-am-collapse="{target='#doc-nav'}"
+		7.导航条中表单的使用 am-topbar-form 
+
+		注意：
+			am-topbar-left 导航条的左浮动
+			am-topbar-right 导航条的右浮动
+	-->
+
+	<header class="am-topbar">
+		<h1 class="am-topbar-brand"><a href="">AmazeUI</a></h1>
+		
+		<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-success am-btn-sm am-show-sm-only" data-am-collapse="{target:'#doc-nav'}">
+			<span class="am-sr-only">导航切换</span>
+			<span class="am-icon-bars"></span>
+		</button>
+
+		<div class="am-collapse am-topbar-collapse" id="doc-nav">
+			<ul class="am-nav am-nav-pills am-topbar-nav">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">新闻中心</a></li>
+				<li><a href="#">关于我们</a></li>
+				<li><a href="#">招商加盟</a></li>
+			</ul>
+
+			<form action="" class="am-topbar-form  am-topbar-left am-form-inline">
+				<div class="am-form-group">
+					<input type="text" class="am-form-field am-input-sm" placeholder="搜索">
+				</div>
+			</form>
+
+			<div class="am-topbar-right">
+				<button class="am-btn am-btn-primary am-topbar-btn">登录</button>
+			</div>
+
+		</div>
+		
+		
+	</header>
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="../js/amazeui.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>
